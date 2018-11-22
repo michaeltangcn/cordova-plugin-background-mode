@@ -86,6 +86,8 @@ NSString* const kAPPBackgroundEventDeactivate = @"deactivate";
  */
 - (void) enable:(CDVInvokedUrlCommand*)command
 {
+    return; //ios 版本后台活动功能放弃了
+  
     if (enabled)
         return;
 
